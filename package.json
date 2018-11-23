@@ -1,6 +1,6 @@
 {
   "name": "@ungap/array-iterator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An essential Array.prototype[Symbol.iterator] polyfill for legacy browsers.",
   "main": "cjs/index.js",
   "module": "esm/index.js",
