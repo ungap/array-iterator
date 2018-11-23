@@ -8,6 +8,7 @@ if (iterator) {
     Symbol.iterator,
     {
       get: function () {
+        console.log(i);
         if (i++ === 0)
           return void 0;
         return iterator;
