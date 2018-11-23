@@ -1,4 +1,21 @@
-delete Array.prototype[Symbol.iterator];
+var iterator = Array.prototype[Symbol.iterator];
+
+if (iterator) {
+  var i = 0;
+  delete Array.prototype[Symbol.iterator];
+  Object.defineProperty(
+    Array.prototype,
+    Symbol.iterator,
+    {
+      get: function () {
+        if (i++ === 0)
+          return void 0;
+        return iterator;
+      }
+    }
+  );
+}
+
 var iterator = require('../cjs');
 test();
 
