@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ungap Array Symbol.iterator</title>
+  <script>if (typeof Symbol === 'undefined') Symbol = {};</script>
+  <script src="global.js"></script>
+  <script type="module">
+  import SI from '../esm/index.js';
+  window.SI = SI;
+  </script>
+  <script>
+  this.onload = function () {
+    if (!this.SI)
+      loadScript('../min.js', function () {
+        loadTest(iterator, 'Symbol.iterator!');
+      });
+    else {
+      console.assert(SI === Symbol.iterator);
+      loadTest(Symbol.iterator, 'Symbol.iterator!');
+    }
+  };
+  </script>
+</head>
+</html>
