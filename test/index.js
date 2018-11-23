@@ -1,6 +1,6 @@
-var iterator = Array.prototype[Symbol.iterator];
+var nativeIterator = Array.prototype[Symbol.iterator];
 
-if (iterator) {
+if (nativeIterator) {
   var i = 0;
   delete Array.prototype[Symbol.iterator];
   Object.defineProperty(
@@ -11,7 +11,7 @@ if (iterator) {
         console.log(i);
         if (i++ === 0)
           return void 0;
-        return iterator;
+        return nativeIterator;
       }
     }
   );
