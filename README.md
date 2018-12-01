@@ -1,6 +1,6 @@
 # Array iterator
 
-[![Build Status](https://travis-ci.com/ungap/array-iterator.svg?branch=master)](https://travis-ci.com/ungap/array-iterator) [![Coverage Status](https://coveralls.io/repos/github/ungap/array-iterator/badge.svg?branch=master)](https://coveralls.io/github/ungap/array-iterator?branch=master) ![WebReflection status](https://offline.report/status/webreflection.svg)
+[![Build Status](https://travis-ci.com/ungap/array-iterator.svg?branch=master)](https://travis-ci.com/ungap/array-iterator) [![Coverage Status](https://coveralls.io/repos/github/ungap/array-iterator/badge.svg?branch=master)](https://coveralls.io/github/ungap/array-iterator?branch=master) [![Greenkeeper badge](https://badges.greenkeeper.io/ungap/array-iterator.svg)](https://greenkeeper.io/) ![WebReflection status](https://offline.report/status/webreflection.svg)
 
 An essential [Array Symbol.iterator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/@@iterator) polyfill for legacy browsers.
 
