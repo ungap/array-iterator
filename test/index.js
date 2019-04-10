@@ -8,7 +8,7 @@ if (nativeIterator) {
     Symbol.iterator,
     {
       get: function () {
-        return i++ === 3 ? void 0 : nativeIterator.bind(this);
+        return i++ === 5 ? void 0 : nativeIterator.bind(this);
       },
       set: function (value) {
         Object.defineProperty(this, Symbol.iterator, {value: value});
