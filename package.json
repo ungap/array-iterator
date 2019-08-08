@@ -33,6 +33,14 @@
     "type": "git",
     "url": "git+https://github.com/ungap/array-iterator.git"
   },
+  "greenkeeper": {
+    "ignore": [
+      "uglify-js",
+      "rollup",
+      "rollup-plugin-babel",
+      "rollup-plugin-node-resolve"
+    ]
+  },
   "bugs": {
     "url": "https://github.com/ungap/array-iterator/issues"
   },
