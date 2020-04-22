@@ -1,23 +1,7 @@
-var nativeIterator = Array.prototype[Symbol.iterator];
-
-if (nativeIterator) {
-  var i = 0;
-  delete Array.prototype[Symbol.iterator];
-  Object.defineProperty(
-    Array.prototype,
-    Symbol.iterator,
-    {
-      get: function () {
-        return i++ === 5 ? void 0 : nativeIterator.bind(this);
-      },
-      set: function (value) {
-        Object.defineProperty(this, Symbol.iterator, {value: value});
-      }
-    }
-  );
-}
-
+var Symbol = global.Symbol;
+global.Symbol = {};
 var iterator = require('../cjs');
+global.Symbol = Symbol;
 test();
 
 function test() {
