@@ -1,6 +1,6 @@
 /*! (c) Andrea Giammarchi - ISC */
 // requires a global Symbol
-var iterator = [][Symbol.iterator] || function () {
+var iterator = [][Symbol.iterator] || /* istanbul ignore next */ function () {
   var i = 0;
   var self = this;
   return {

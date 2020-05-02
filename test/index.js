@@ -1,7 +1,4 @@
-var Symbol = global.Symbol;
-global.Symbol = {};
 var iterator = require('../cjs');
-global.Symbol = Symbol;
 test();
 
 function test() {
